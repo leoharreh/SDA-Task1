@@ -44,7 +44,7 @@ public class FileEncoder61725 {
 			int was_read = 0;
 			while((was_read  = in.read())!=-1)
 			{
-				if(!isPrime(i))
+				if(!isPrime(counter))
 				{
 					out.write(key.get(was_read));
 				}
@@ -76,7 +76,7 @@ public class FileEncoder61725 {
 			int was_read = 0;
 			while((was_read=in.read())!=-1) 
 			{
-				if(!isPrime(i))
+				if(!isPrime(counter))
 				{
 					out.write((char)key.indexOf(was_read));
 				}
